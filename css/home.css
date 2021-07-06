@@ -1,0 +1,116 @@
+/* home section */
+/* .home-section{
+    background: var(--background);
+} */
+
+.home-section .main-text h1{
+    padding: 3rem 0 ;
+    font-size: 48px;
+    margin: 2rem 0 0 0;
+}
+
+.home-section .main-text .main-para{
+    padding: 1rem 8rem  ;
+    font-size: 18px;
+}
+
+.home-section .main-text .main-para > a{
+    color: var(--main-light-pink);
+    text-decoration: none;
+    transition: all .3s ease;
+}
+
+.home-section .main-text .main-para > a:hover{
+    color: var(--main-blue);
+}
+
+.home-section .main-text .main-para > span{
+    color: var(--main-light-pink);
+}
+
+.home-section .main-text .main-para > span > span{
+    color: var(--main-pink);
+}
+
+.home-section .main-text h4{
+    padding: 2rem 0;
+    font-size: 25px;
+}
+
+.home-section .main-text form > input{
+    width: 50%;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-family: var(--roboto);
+    background: transparent;
+    color: var(--main-white);
+    outline: none;
+    border: 3px solid var(--main-blue);
+    border-radius: 25px;
+}
+
+.home-section .main-text .buttons{
+    margin: 1.5rem 0;
+    display: flex;
+    justify-content: center;
+}
+
+.home-section .main-text .buttons .button1{
+    background-color: var(--main-black);
+    border: 3px solid var(--main-blue);
+    color: var(--main-white);
+    transition: all .3s ease;
+}
+
+.home-section .main-text .buttons .button1:hover{
+    background-color: var(--main-blue);
+    border: 3px solid var(--main-white);
+}
+
+.home-section .main-text .buttons .button2{
+    background-color: var(--main-blue);
+    border: 3px solid var(--main-white);
+    transition: all .3s ease;
+}
+
+.button1, .button2{
+    padding: 10px;
+    margin: 1rem 2rem;
+    border-radius: 35px;
+    font-weight: 600;
+    width: 10rem;
+    outline: none;
+}
+
+.home-section .main-text .para{
+    margin-bottom: 5rem;
+    font-size: 14px;
+}
+
+
+
+/* media query */
+
+@media screen and (max-width: 1024px){
+    
+    .home-section .main-text h1{
+        font-size: 35px;
+    }
+
+    .home-section .main-text .main-para{
+        padding: 1rem 2rem  ;
+        font-size: 18px;
+    }
+    
+    .home-section .main-text form > input{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .buttons{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}

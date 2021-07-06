@@ -1,0 +1,225 @@
+/* @import url(./blur_gradient.css); */
+@import url(./home.css);
+@import url(./about.css);
+@import url(./work.css);
+@import url(./contact.css);
+
+/* font family */
+/* font-family: 'Montserrat', sans-serif; */
+/* font-family: 'Roboto', sans-serif; */
+
+
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    font-family: var(--montserrat)
+}
+
+:root{
+    --main-black: #231e23;
+    --main-blue: #00adb5;
+    --main-dark-blue: #005c61;
+    --main-white: #deeeea;
+    --main-light-pink: #ff96ad;
+    --main-pink: #bf1363;
+    --roboto:'Roboto', sans-serif;
+    --montserrat: 'Montserrat', sans-serif;
+    --background: linear-gradient(to right top, rgb(255, 255, 255, .3), rgba( 255, 255, 255, .0));
+    --background-2: linear-gradient(to right bottom, rgb(255, 255, 255, 3), rgba( 255, 255, 255, 0));
+    --background-3: linear-gradient(to right top, rgb(0,173,181, .7), rgb(0,173,181, .0));
+    
+}
+
+body{
+    background: var(--background);
+    background-color: var(--main-black);
+    
+    color: var(--main-white);
+    margin: 0;
+    padding: 0;
+}
+
+.animation-slide{
+    animation: slide 1s ease ;
+}
+
+.heading h4{
+    padding: .5rem 5rem;
+    margin: 2.5rem 0;
+    background: var(--background-3);
+    border-radius: 35px;
+    width: 70%;
+    font-weight: 600;
+}
+
+.heading h1{
+    font-size: 48px;
+    margin: 1rem 0 3rem 0;
+    
+}
+
+/*========= navbar ========== */
+
+
+ .upper-banner {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    margin: 0 6em;
+}
+
+.upper-banner .phone{
+    flex: 1;  
+    font-weight: 500;
+}
+
+.upper-banner .phone > i{
+    color: var(--main-blue);
+}
+
+
+.upper-banner .website-title{
+    flex: 1;
+    justify-content: center;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 700;
+    letter-spacing: 4px;
+}
+
+.upper-banner .website-title > span {
+    color: var(--main-blue);
+}
+
+.upper-banner .social-icons{
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+
+}
+
+.upper-banner .social-icons li a{
+    color: var(--main-blue);
+    text-decoration: none;
+    padding: 0 1rem;
+    font-size: 18px;
+    transition: all .3s ease;
+    
+}
+
+.upper-banner .social-icons li a:hover{
+    color: var(--main-white);
+}
+
+.navbar-bg{
+    background: var(--background-3);
+    /* background-color: var(--main-blue); */
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-bg .navbar-list .navbar-item{
+    margin: 0 3rem;
+    max-width: 25rem;
+    width: 13rem;
+    font-size: 14px;
+    text-align: center;
+    
+    
+}
+
+.navbar-bg .navbar-list .navbar-item .nav-link{
+    /* background-color: var(--main-white); */
+    background: var(--background-2);
+    color: var(--main-dark-blue);
+    font-weight: 600;
+    font-family: var(--roboto);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid var(--main-black);
+    padding: 1rem 1rem;
+    border-radius: 30px;
+    transition: all .5s ease;
+}
+
+.navbar-bg .navbar-list .navbar-item .nav-link:hover{
+    background-color: var(--background-3);
+    color: var(--main-black);
+    border: 3px solid var(--main-white);
+    margin: 0 -1rem;
+   
+}
+
+.navbar-bg .navbar-list .navbar-item .nav-link:hover .icon{
+    color: var(--main-blue);
+}
+
+.navbar-bg .navbar-list .navbar-item .nav-link .icon{
+    margin: 0 .5rem;
+    font-size: 20px;
+    color: var(--main-black);
+}
+
+.footer-section {
+    font-size: 14px;
+}
+
+.footer-section span{ 
+    color: var(--main-light-pink);
+}
+
+
+
+
+/* media query */
+
+@media screen and (max-width: 1024px) {
+    .navbar-bg{
+        height: max-content;
+    }
+    .navbar-item > a{
+        margin: .5em 0;
+    }
+    .phone{
+        display: none;
+    }
+    .upper-banner{
+        display: flex;
+    }
+    .website-title{
+        /* display: flex; */
+        justify-content: flex-start;
+        align-content: flex-start;
+    }
+    .heading h1{
+        font-size: 30px;
+    }
+}
+
+@keyframes slide {
+    0%{
+        opacity: 0;
+        transform: translateY(100%);
+    }
+    25%{
+        opacity: .3;
+    }
+    50%{
+        opacity: .6;
+    }
+    75%{
+        opacity: .8;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    
+}

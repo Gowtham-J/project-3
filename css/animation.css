@@ -1,0 +1,9 @@
+.animation-slide{
+    opacity: 1;
+    transition: 500ms;
+}
+
+html.is-animating .animation-slide{
+    opacity: 0;
+    
+}

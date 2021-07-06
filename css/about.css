@@ -1,0 +1,93 @@
+
+
+
+.artist-info{
+    display: flex;
+}
+
+.artist-info > div{
+    padding:  1.5rem;   
+    /* margin-top: 1rem;  */
+    
+}
+
+.artist{
+    flex: 1.25;
+    max-height: 100%;
+}
+
+.artist, .graduate-info{
+    position: relative;
+    margin-left: 100px;
+    margin-top: 100px;
+    
+}
+
+.artist-info .artist img, .graduate-info > img{
+    display: block;
+    max-width: 100%;
+    height: 200px;
+    width: 200px;
+    border: 3px solid var(--main-white);
+    object-fit: cover;
+    /* positions */
+    position: absolute;
+    top: -100px;
+    left: -100px;
+}
+
+.graduate-info{
+    flex: 1;
+    /* display: flex; */
+    flex-direction: column;
+    max-width: 100%;
+}
+
+.artist-info .info{
+    display: flex;
+    flex-direction: column;
+    background: var(--background-3);
+    border: 1px solid var(--main-white);
+    padding: 30px;
+    padding-left: 130px;
+    height: 22rem;
+}
+
+.artist-info .info h4{
+    font-weight: 600;
+}
+
+/* media query */
+
+@media screen and (max-width: 1200px) {
+    .artist-info{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .artist-info .info{
+        text-align: center;
+        
+        /* margin-top: 100px; */
+        padding-top: 100px;
+        padding-left: 30px;
+        height: 100%;
+    }
+    .artist, .graduate-info{
+        margin-left: auto;
+
+    }
+    .artist-info .artist img, .graduate-info > img{
+        top: -100px;
+        /* transform: translateX(110%); */
+        left: 30%;
+    }
+    
+}
+
+@media screen and (max-width: 440px) {
+    .artist-info .artist img, .graduate-info > img{
+        left: 22%;
+    }
+}
